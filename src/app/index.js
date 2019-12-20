@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import {User} from './user'
 
 export default function App() {
   return (
@@ -44,7 +45,12 @@ export default function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  return (
+    <div>
+      <h2>Home</h2>
+      <User />
+    </div>
+  );
 }
 
 function About() {
